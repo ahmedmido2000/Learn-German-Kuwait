@@ -46,6 +46,19 @@ function showMessage() {
   }
 }
 
+// 📌 Array بالدوال
+const functions = [showMessage, showVission, showGoal];
+let index = 0;
+
+// 📌 استدعاء أولي
+functions[index]();
+
+// 📌 تبديل كل 3 ثواني
+setInterval(() => {
+  index = (index + 1) % functions.length; // يرجع من الأول بعد آخر دالة
+  functions[index]();
+}, 5000);
+
 // 🖼️ سلايدر الصور
 document.addEventListener("DOMContentLoaded", function () {
   const slider = document.getElementById("why-slider");
@@ -67,6 +80,26 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 3000);
   }
 });
+
+// 🖼️ سلايدر متعدد الصور
+document.addEventListener("DOMContentLoaded", function () {
+  const sliders = document.querySelectorAll(".slider-img");
+
+  sliders.forEach(slider => {
+    const images = JSON.parse(slider.getAttribute("data-images")); // الصور الخاصة بكل slider
+    let index = 0;
+
+    setInterval(() => {
+      slider.classList.add("fade-out");
+      setTimeout(() => {
+        index = (index + 1) % images.length;
+        slider.src = images[index];
+        slider.classList.remove("fade-out");
+      }, 300);
+    }, 3000);
+  });
+});
+
 
 // 🎡 سلايدر الكورسات (Swiper)
 if (document.querySelector(".mySwiper")) {

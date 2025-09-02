@@ -35,7 +35,7 @@ body {
 }
 .navbar-nav .nav-item .nav-link,
 .lang-text {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   color: #272727;
 }
@@ -55,6 +55,7 @@ body {
   .navbar-nav .nav-item .nav-link,
   .lang-text {
     font-size: 16px;
+    font-weight: 700;
   }
 }
 
@@ -69,8 +70,16 @@ body {
 }
 
 /* جعل القوائم الفرعية تظهر يمين القائمة الأساسية */
-.dropdown-submenu {
+.dropdown-menu {
   position: relative;
+  background-color: #f5f5f5 !important;
+}
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.slider-img {
+  transition: opacity 0.3s ease;
 }
 
 .dropdown-submenu .dropdown-menu {
@@ -78,6 +87,7 @@ body {
   right: 100%; /* لو RTL خليها right بدلاً من left */
   display: none;
   position: absolute;
+  background-color: #f5f5f5 !important;
 }
 
 /* تظهر عند hover */
@@ -93,6 +103,18 @@ body {
 .navbar .fa-chevron-left,
 .navbar .fa-chevron-down {
   font-size: 0.8rem;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    direction: ltr !important;
+    text-align: left; /* يخلي النصوص تبدأ من الشمال */
+  }
+
+  .navbar-nav .dropdown-menu {
+    direction: ltr !important;
+    text-align: left;
+  }
 }
 
 .main-title {
@@ -234,12 +256,12 @@ body {
 .why-text {
   color: #000;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .why-main-text {
   color: #000;
-  font-size: 48px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 600;
 }
 .why-filter-btn {
   border: 1px solid #fdaf04;
@@ -258,11 +280,15 @@ body {
   color: #fdaf04;
 }
 .why-sub-title {
-  color: #121212b2;
+  color: #121212;
   font-size: 18px;
   font-weight: 500;
 }
-
+.why-main-text-2{
+  color: #000;
+  font-size: 40px;
+  font-weight: 600;
+}
 #why-slider {
   transition: opacity 1s ease-in-out; /* المدة 1 ثانية */
 }
