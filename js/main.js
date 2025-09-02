@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const collapses = document.querySelectorAll(".collapse");
+  const collapses = document.querySelectorAll(".faq-collapse");
 
   collapses.forEach(collapse => {
     const header = collapse.previousElementSibling; // الهيدر (السؤال)
