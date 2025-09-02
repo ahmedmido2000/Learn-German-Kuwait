@@ -51,6 +51,13 @@ body {
     font-size: 11px;
   }
 }
+@media (max-width: 992px) {
+  .navbar-nav .nav-item .nav-link,
+  .lang-text {
+    font-size: 16px;
+  }
+}
+
 .navbar-nav .nav-item .nav-link.active,
 .navbar-nav .nav-item .nav-link:hover {
   color: #fdaf04;
@@ -385,7 +392,7 @@ footer {
   height: 95px;
 }
 .footer-main-title {
-  font-size: 40px;
+  font-size: 32px;
   color: #fafafa;
   font-weight: 500;
 }
@@ -572,11 +579,11 @@ footer .footer-icon {
   border: 1px solid #fdaf04 !important;
   font-size: 16px !important;
   color: #12121280 !important;
-  width: 160px !important;
+  width: 200px !important;
 }
 .drop-down-arrow {
   top: 10px;
-  right: 135px;
+  right: 175px;
   color: #fdaf04;
 }
 .search-input-2 {
