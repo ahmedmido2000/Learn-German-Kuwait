@@ -123,7 +123,7 @@ body {
 }
 @media (max-width: 676px) {
   .main-title {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 500;
   }
 }
@@ -298,10 +298,10 @@ body {
 
 @media (max-width: 676px) {
   .why-text {
-    font-size: 18px;
+    font-size: 24px;
   }
   .why-main-text {
-    font-size: 24px;
+    font-size: 18px;
   }
   .why-sub-title {
     font-size: 12px;
