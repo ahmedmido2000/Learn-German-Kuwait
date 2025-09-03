@@ -939,4 +939,14 @@ select.form-select {
   .faq-sub-title {
     font-size: 16px;
   }
+  .gallery-filter{
+    width: 160px;
+    height: 60px;
+  }
+  .gallery-filter-icon{
+    font-size: 15px;
+  }
+  .gallery-filter-text{
+    font-size: 16px;
+  }
 }
