@@ -10,7 +10,7 @@
 }
 body {
   background-color: #fff8e6 !important;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 .hovers:hover {
   opacity: 0.8;
@@ -418,7 +418,7 @@ footer {
   height: 95px;
 }
 .footer-main-title {
-  font-size: 32px;
+  font-size: 29px;
   color: #fafafa;
   font-weight: 500;
 }
@@ -849,6 +849,11 @@ select.form-select {
   font-weight: 500;
   color: #12121299;
 }
+.teacher-main-img{
+  width: 100%;
+  height: 450px !important;
+  border-radius: 30px;
+}
 @media (max-width: 676px) {
   .comments-card .quote-img {
     width: 40px;
@@ -949,4 +954,18 @@ select.form-select {
   .gallery-filter-text{
     font-size: 16px;
   }
+  .teacher-main-img{
+    height: 300px;
+  }
+  .contact-icon-container{
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+  .contact-title{
+    font-size: 20px;
+  }
+.contact-desc{
+  font-size: 15px;
+}
 }
