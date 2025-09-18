@@ -421,3 +421,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+// نحدد الكونتينر الأساسي
+const container = document.querySelector(".videos-container");
+
+function rotateVideos() {
+  const first = container.firstElementChild; // أول فيديو
+  container.appendChild(first); // نحطه في الآخر
+}
+
+// نتحقق من حجم الشاشة
+const mediaQuery = window.matchMedia("(min-width: 768px)");
+
+if (mediaQuery.matches) {
+  // لو الشاشة أكبر من md يبدأ التبديل
+  setInterval(rotateVideos, 3000);
+}
+
